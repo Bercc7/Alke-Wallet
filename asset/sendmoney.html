@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Dinero - Alke Wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wallet-container" style="max-width: 500px;">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="m-0" style="color: #004225;">Enviar Dinero</h2>
+            <a href="menu.html" class="text-decoration-none" style="color: #004225;">
+                <i class="fa-solid fa-arrow-left"></i> Volver
+            </a>
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="contacto" class="form-label fw-bold">Destinatario</label>
+                <select class="form-select" id="contacto">
+                    <option selected disabled>Elige un contacto...</option> 
+                    <option value="madre">Mamá</option>
+                    <option value="banco">Banco (Arriendo)</option>
+                    <option value="ahorro">Cuenta de Ahorro</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label for="monto-envio" class="form-label fw-bold">Monto a transferir</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" id="monto-envio" placeholder="0" required>
+                </div>
+            </div>
+
+            <button type="button" id="btn-enviar" class="btn w-100 py-3" 
+                    style="background-color: #004225; color: white; font-weight: bold;">
+                <i class="fa-solid fa-paper-plane me-2"></i> Realizar Transferencia
+            </button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #004225 0%, #002a17 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-attachment: fixed;
+}
+
+.wallet-container {
+    background-color: #F5F5DC;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    padding: 32px;
+
+}
+
+.wallet-header h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #004225;
+    margin-bottom: 4px;
+}
+
+.wallet-header p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+.wallet-balance {
+    background-color: #004225;
+    color: #fff;
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.wallet-balance h2 {
+    font-size: 12px;
+    color: #F5F5DC;
+    margin: 0;
+}
+
+.wallet-amount {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 8px;
+    letter-spacing: -1px;
+}
+
+.wallet-action {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFCF9D;
+  border: 1px solid #004225;
+  border-radius: 12px;
+  padding: 12px;
+  width: 30%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FFB000;
+  transform: translateY(-2px);
+}
+
+.btn .icon {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+} 
+
+.send-btn .icon {
+  color: #004225;
+}
+
+.receive-btn .icon {
+  color: #004225;
+}
+
+.exchange-btn .icon {
+  color: #004225;
+}
+
+.wallet-transactions {
+    background-color: #004225;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid #f0ece2;
+}
+
+.wallet-transactions h2 {
+    font-size: 14px;
+    text-align: left;
+    color: #F5F5DC;
+    margin-bottom: 16px;
+}
+
+table th {
+    font-size: 11px;
+    color: #aaa;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #004225;
+}
+
+table td {
+    font-size: 13px;
+    padding: 12px 0;
+    border-bottom: 1px solid #fafafa;
+}
+
+.amount.sent { 
+  color: #b22222; font-weight: 600; 
+}
+.amount.received { 
+  color: #00592e; font-weight: 600; 
+}
+
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #00592e;
+    box-shadow: 0 0 0 0.2rem rgba(0, 89, 46, 0.25);
+}

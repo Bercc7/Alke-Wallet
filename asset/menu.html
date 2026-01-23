@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alke Wallet</title>
+    <meta name="description" content="Test Proyecto Wallet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Hoja estilos-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent w-100" style="position: absolute; top: 0;">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand fw-bold" href="#" style="color: #F5F5DC;">
+                <i class="fa-solid fa-wallet me-2"></i> Alke Wallet
+            </a>
+        </div>
+    </nav>
+    <div class="wallet-container">
+        <div class="wallet-header">
+            <h2>Mi Billetera</h2>
+            <p>Bienvenido, Bastian</p>
+        </div>
+
+        <div class="wallet-balance">
+            <h2>Balance Total</h2>
+            <p class="wallet-amount" id="saldo-actual">$10.527.630</p>
+        </div>
+
+        <div class="wallet-action">
+            <a href="sendmoney.html" class="btn send-btn" style="text-decoration: none;">
+                <span class="icon"><i class="fa-solid fa-paper-plane"></i></span>
+                <span>Enviar</span>
+            </a>
+            <a href="deposit.html" class="btn receive-btn" style="text-decoration: none;">
+                <span class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                <span>Recibir</span> 
+            </a>
+            <a href="transactions.html" class="btn exchange-btn" style="text-decoration: none;">
+                <span class="icon"><i class="fa-solid fa-list"></i></span>
+                <span>Movimientos</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
